@@ -9,5 +9,5 @@
 | `np8_evidence.py`, `np9_verify.py` | The evidence layer for the chemical half; the verification loop. |
 | `np10_litsearch.py`, `np11_cited_audit.py` | Literature search against `non_peptides_prompt.txt` for pairs with no evidence; adjudicate every pending cited row. |
 | `np13_chembl.py`, `np13_groups.py`, `np13_propagate.py` | Pull ChEMBL activities; group multi-subunit receptors into one (chemical, complex) unit; apply that complex rule retroactively. |
-| `np14_auto.py`, `np14_chunks.py` | Automated first pass, added 12 Oct after the briefing was written. For each pair it runs the np10 PubMed query and splits the abstracts into sentences. A pair with no sentence naming both the molecule and the receptor is logged "No evidence" with the reason. Everything else goes to reviewers. |
+| `np14_auto.py`, `np14_chunks.py` | Automated first pass. For each pair it runs the np10 PubMed query and splits the abstracts into sentences. A pair with no sentence naming both the molecule and the receptor is logged "No evidence" with the reason. Everything else goes to reviewers. |
 | `np_common.py` | Shared guards, written after a silent-failure incident. |
