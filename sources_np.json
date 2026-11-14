@@ -1,0 +1,106 @@
+{
+  "_comment": "Phase NP (non-peptide ligands). See PHASE_NONPEPTIDE.md. 'reuse' names sources already pinned by cur0a_acquire.py from sources.json; np0 only sets their shippable flag and asserts they are present.",
+  "reuse": {
+    "gtopdb_interactions": {
+      "shippable": 1
+    },
+    "cellchatdb_human": {
+      "shippable": 1
+    },
+    "cellphonedb_interactions": {
+      "shippable": 1
+    }
+  },
+  "sources": {
+    "mrclinkdb_human_mr": {
+      "name": "MRCLinkdb metabolite L-R interactions (human)",
+      "role": "evidence",
+      "shippable": 1,
+      "url": "https://www.cellknowledge.com.cn/mrclinkdb/download/Homo%20sapiens%20metabolite%20L-R%20interaction.txt",
+      "local_file": "raw/mrclinkdb_human_mr.txt",
+      "delim": "\t",
+      "licence": "CHECK - no licence stated on site; Zhang et al. BMC Biol 2024, PMID 38978014",
+      "note": "Use THIS file, not the Zenodo deposit. Zenodo human_mr.txt has 4 cols / 681 rows and no PMID; this has 15 cols / 794 rows with PMID and Other.DB."
+    },
+    "mrclinkdb_human_enzyme": {
+      "name": "MRCLinkdb metabolite enzymes (human)",
+      "role": "annotation",
+      "shippable": 1,
+      "url": "https://www.cellknowledge.com.cn/mrclinkdb/download/Homo%20sapiens%20enzyme.txt",
+      "local_file": "raw/mrclinkdb_human_enzyme.txt",
+      "delim": "\t",
+      "licence": "CHECK - as mrclinkdb_human_mr",
+      "note": "enzyme_p_s: p = produces, s = consumes. Signed role, which MetaLigand lacks."
+    },
+    "mrclinkdb_human_transporter": {
+      "name": "MRCLinkdb metabolite transporters (human)",
+      "role": "annotation",
+      "shippable": 1,
+      "url": "https://www.cellknowledge.com.cn/mrclinkdb/download/Homo%20sapiens%20transporter%20protein.txt",
+      "local_file": "raw/mrclinkdb_human_transporter.txt",
+      "delim": "\t",
+      "licence": "CHECK - as mrclinkdb_human_mr",
+      "note": "No direction stated; maps to role=efflux with a direction_unknown flag."
+    },
+    "metalinksdb": {
+      "name": "MetalinksDB knowledge graph (SQLite, via LIANA+)",
+      "role": "candidate",
+      "shippable": 1,
+      "url": "https://github.com/scverse/liana/releases/download/metalinksdb/metalinksdb.db",
+      "local_file": "raw/metalinksdb.db",
+      "sha256_expected": "84df58e659cd0fe318b10f6d5d7ac1f16806b1088701fccf4260e78ba0982513",
+      "licence": "CC BY 4.0 (Zenodo 10200150); Farr et al. Brief Bioinform 2024, PMID 39038934",
+      "note": "9744 distinct lr pairs, 9433 of them STITCH-only. pathway table partly corrupt (18 fragment values, 781 rows) - do not import."
+    },
+    "metaligand_pairs_human": {
+      "name": "MetaLigand NPL-receptor pairs (human)",
+      "role": "candidate",
+      "shippable": 1,
+      "url": "https://raw.githubusercontent.com/jinyangye119/MetaLigand/main/inst/extdata/NPLRdb_human.csv",
+      "local_file": "raw/metaligand_NPLRdb_human.csv",
+      "delim": ",",
+      "licence": "MIT (Jin 2026); Xin et al. Cell Rep Methods 2025, doi 10.1016/j.crmeth.2025.101217",
+      "note": "Three columns: row index, L (compound name), R (gene symbol). No IDs, no evidence."
+    },
+    "metaligand_ligands_human": {
+      "name": "MetaLigand per-ligand gene sets (human)",
+      "role": "annotation",
+      "shippable": 1,
+      "url": "https://raw.githubusercontent.com/jinyangye119/MetaLigand/main/inst/extdata/LR_data_human.csv",
+      "local_file": "raw/metaligand_LR_data_human.csv",
+      "delim": ",",
+      "licence": "MIT (Jin 2026)",
+      "note": "Carries HMDB_id, Synonyms, and the four gene groups: Synthetic_genes, Synthetic_genes_lv2, Transporter_genes, Transporter_genes_in."
+    },
+    "metaligand_ligand_list": {
+      "name": "MetaLigand ligand classification",
+      "role": "annotation",
+      "shippable": 1,
+      "url": "https://raw.githubusercontent.com/jinyangye119/MetaLigand/main/inst/extdata/Ligand_list.csv",
+      "local_file": "raw/metaligand_Ligand_list.csv",
+      "delim": ",",
+      "licence": "MIT (Jin 2026)",
+      "note": "Class / SuperClass / Class_source. Class_source is usually 'ChEBI Ontology' but no ChEBI accession is stored."
+    },
+    "mebocost_human": {
+      "name": "MEBOCOST metabolite-sensor partners (human)",
+      "role": "candidate",
+      "shippable": 0,
+      "url": "https://raw.githubusercontent.com/kaifuchenlab/MEBOCOST/main/data/mebocost_db/human/human_met_sensor_update_Oct21_2025.tsv",
+      "local_file": "raw/mebocost_human_met_sensor.tsv",
+      "delim": "\t",
+      "licence": "RESTRICTED - no redistribution outside the research group, no derived database or website. Zheng et al. NAR 2025, doi 10.1093/nar/gkaf569",
+      "note": "shippable=0 is a LICENCE constraint, not a quality one. np6_export.py must assert no row sourced here reaches release/. Only source with 100% PMID coverage (793/793), so it is valuable as an internal cross-check."
+    },
+    "mebocost_human_enzymes": {
+      "name": "MEBOCOST metabolite-associated enzymes/reactions (human)",
+      "role": "annotation",
+      "shippable": 0,
+      "url": "https://raw.githubusercontent.com/kaifuchenlab/MEBOCOST/main/data/mebocost_db/human/metabolite_associated_gene_reaction_HMDB_summary.tsv",
+      "local_file": "raw/mebocost_human_gene_reaction.tsv",
+      "delim": "\t",
+      "licence": "RESTRICTED - as mebocost_human. Zheng et al. NAR 2025, doi 10.1093/nar/gkaf569",
+      "note": "direction: substrate = metabolite consumed (degradation), product = metabolite made (synthesis). gene field is 'SYM[evidence]; SYM[evidence]'. Internal cross-check only."
+    }
+  }
+}

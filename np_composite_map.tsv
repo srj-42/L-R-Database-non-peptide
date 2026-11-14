@@ -1,0 +1,240 @@
+source_id	raw_ligand	n_rows	chem_token	enzyme_genes	precursor_token	parse_method	resolved_name	hmdb_id	likely_peptide	needs_review	review_reason	manual_chem_name	manual_hmdb_id	manual_enzyme_genes	first_pass_note
+cellchatdb_human	12oxoLTB4-PTGR1	2	12oxoLTB4	PTGR1		right-walk			0	1	CONFIRM: PTGR1 makes 12-oxo-LTB4; HMDB indexes it as 12-keto-LTB4. Same compound on the face of it, but confirm the tautomer naming.	12-Keto-leukotriene B4	HMDB0004234		PTGR1 makes 12-oxo-LTB4; HMDB indexes it as 12-keto-LTB4. Same compound on the face of it, but confirm the tautomer naming.
+cellchatdb_human	22HC-CYP11A1	1	22HC	CYP11A1		right-walk			0	1	CONFIRM: CYP11A1 acts on 22R-hydroxycholesterol; HMDB has '22b-'. CONFIRM 22b == 22R before accepting - stereochemistry matters here.	22b-Hydroxycholesterol	HMDB0004035		CYP11A1 acts on 22R-hydroxycholesterol; HMDB has '22b-'. CONFIRM 22b == 22R before accepting - stereochemistry matters here.
+cellchatdb_human	22HC-CYP3A4	1	22HC	CYP3A4		right-walk			0	1	CONFIRM: CYP11A1 acts on 22R-hydroxycholesterol; HMDB has '22b-'. CONFIRM 22b == 22R before accepting - stereochemistry matters here.	22b-Hydroxycholesterol	HMDB0004035		CYP11A1 acts on 22R-hydroxycholesterol; HMDB has '22b-'. CONFIRM 22b == 22R before accepting - stereochemistry matters here.
+cellchatdb_human	2AG-DAGLA	3	2AG	DAGLA		right-walk	2-AG	HMDB0004666	0	0					
+cellchatdb_human	2AG-DAGLB	3	2AG	DAGLB		right-walk	2-AG	HMDB0004666	0	0					
+cellchatdb_human	5-HT-DOPA-DDC	22	5-HT	DDC	DOPA	right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5-HT-TPH1_SLC18A1	13	5-HT	TPH1;SLC18A1		right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5-HT-TPH1_SLC18A2	13	5-HT	TPH1;SLC18A2		right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5-HT-TPH1_SLC6A4	13	5-HT	TPH1;SLC6A4		right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5-HT-TPH2_SLC18A1	13	5-HT	TPH2;SLC18A1		right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5-HT-TPH2_SLC18A2	13	5-HT	TPH2;SLC18A2		right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5-HT-TPH2_SLC6A4	13	5-HT	TPH2;SLC6A4		right-walk	Serotonin	HMDB0000259	0	0					
+cellchatdb_human	5alphaP-DHRS9	1	5alphaP	DHRS9		right-walk			0	0	chemical not found in any HMDB-keyed source	5alpha-Dihydroprogesterone	HMDB0003759		DHRS9 reduces progesterone to 5alpha-dihydroprogesterone
+cellchatdb_human	ADO-NT5E_SLC29A1	4	ADO	NT5E;SLC29A1		right-walk	Adenosine	HMDB0000050	0	0					
+cellchatdb_human	ADO-NT5E_SLC29A2	4	ADO	NT5E;SLC29A2		right-walk	Adenosine	HMDB0000050	0	0					
+cellchatdb_human	ADO-NT5E_SLC29A3	4	ADO	NT5E;SLC29A3		right-walk	Adenosine	HMDB0000050	0	0					
+cellchatdb_human	ADO-NT5E_SLC29A4	4	ADO	NT5E;SLC29A4		right-walk	Adenosine	HMDB0000050	0	0					
+cellchatdb_human	ADR-PNMT_SLC18A1	9	ADR	PNMT;SLC18A1		right-walk	Epinephrine	HMDB0000068	0	0					
+cellchatdb_human	ADR-PNMT_SLC18A2	9	ADR	PNMT;SLC18A2		right-walk	Epinephrine	HMDB0000068	0	0					
+cellchatdb_human	Ach-CHAT_SLC10A4	10	Ach	CHAT;SLC10A4		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellchatdb_human	Ach-CHAT_SLC18A3	10	Ach	CHAT;SLC18A3		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellchatdb_human	Ach-CHAT_SLC5A7	9	Ach	CHAT;SLC5A7		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellchatdb_human	Aldo-CYP11B2	2	Aldo	CYP11B2		right-walk			0	0	chemical not found in any HMDB-keyed source	Aldosterone	HMDB0000037		CYP11B2 is aldosterone synthase
+cellchatdb_human	Androstenedione-CYP17A1	1	Androstenedione	CYP17A1		right-walk	Androstenedione	HMDB0000053	0	0					
+cellchatdb_human	Androsterone-HSD17B6	1	Androsterone	HSD17B6		right-walk	Androsterone	HMDB0000031	0	0					
+cellchatdb_human	CGA_TSHB	1	CGA	TSHB		right-walk			1	1	excluded: not a chemical ligand	EXCLUDE			peptide: thyrotropin alpha subunit (CGA+TSHB)
+cellchatdb_human	Calcitriol-CYP27B1	1	Calcitriol	CYP27B1		right-walk	Calcitriol	HMDB0001903	0	0					
+cellchatdb_human	Cholesterol-CEL	2	Cholesterol	CEL		right-walk	Cholesterol	HMDB0000067	0	0					
+cellchatdb_human	Cholesterol-DHCR24	2	Cholesterol	DHCR24		right-walk	Cholesterol	HMDB0000067	0	0					
+cellchatdb_human	Cholesterol-DHCR7	2	Cholesterol	DHCR7		right-walk	Cholesterol	HMDB0000067	0	0					
+cellchatdb_human	Cholesterol-LIPA	2	Cholesterol	LIPA		right-walk	Cholesterol	HMDB0000067	0	0					
+cellchatdb_human	Cort-CYP11B1	2	Cort	CYP11B1		right-walk			1	0	token is also a gene symbol - check whether peptide or chemical	Corticosterone	HMDB0001547		CYP11B1 is 11-beta-hydroxylase; resolves the CORT/cortistatin false positive
+cellchatdb_human	DHEA-STS	3	DHEA	STS		right-walk	Dehydroepiandrosterone	HMDB0000077	0	0					
+cellchatdb_human	DHEAS-SULT1E1	3	DHEAS	SULT1E1		right-walk	DHEA-S	HMDB0001032	0	0					
+cellchatdb_human	DHEAS-SULT2A1	3	DHEAS	SULT2A1		right-walk	DHEA-S	HMDB0001032	0	0					
+cellchatdb_human	DHEAS-SULT2B	3	DHEAS			no-enzyme-found			0	0	no gene symbol recognised in token	Dehydroepiandrosterone sulfate	HMDB0001032	SULT2B1	SULT2B1 sulfonates DHEA
+cellchatdb_human	DHT-SRD5A1	1	DHT	SRD5A1		right-walk			0	0	chemical not found in any HMDB-keyed source	Dihydrotestosterone	HMDB0002961		SRD5A1/2/3 are 5-alpha reductases
+cellchatdb_human	DHT-SRD5A2	1	DHT	SRD5A2		right-walk			0	0	chemical not found in any HMDB-keyed source	Dihydrotestosterone	HMDB0002961		SRD5A1/2/3 are 5-alpha reductases
+cellchatdb_human	DHT-SRD5A3	1	DHT	SRD5A3		right-walk			0	0	chemical not found in any HMDB-keyed source	Dihydrotestosterone	HMDB0002961		SRD5A1/2/3 are 5-alpha reductases
+cellchatdb_human	DOC-CYP21A2	1	DOC	CYP21A2		right-walk	DOC	HMDB0000016	0	0					
+cellchatdb_human	DOPA-DDC_SLC18A1	5	DOPA	DDC;SLC18A1		right-walk	Dopamine	HMDB0000073	0	0					
+cellchatdb_human	DOPA-DDC_SLC18A2	5	DOPA	DDC;SLC18A2		right-walk	Dopamine	HMDB0000073	0	0					
+cellchatdb_human	DOPA-DDC_SLC6A3	5	DOPA	DDC;SLC6A3		right-walk	Dopamine	HMDB0000073	0	0					
+cellchatdb_human	Desmosterol-DHCR7	2	Desmosterol	DHCR7		right-walk	Desmosterol	HMDB0002719	0	0					
+cellchatdb_human	E2-CYP19A1	4	E2	CYP19A1		right-walk	Estradiol	HMDB0000151	0	0					
+cellchatdb_human	E2-HSD17B1	4	E2	HSD17B1		right-walk	Estradiol	HMDB0000151	0	0					
+cellchatdb_human	GABA-GAD1_SLC32A1	17	GABA	GAD1;SLC32A1		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD1_SLC6A1	17	GABA	GAD1;SLC6A1		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD1_SLC6A11	17	GABA	GAD1;SLC6A11		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD1_SLC6A12	17	GABA	GAD1;SLC6A12		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD1_SLC6A13	17	GABA	GAD1;SLC6A13		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD1_SLC6A6	17	GABA	GAD1;SLC6A6		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD1_SLC6A8	17	GABA	GAD1;SLC6A8		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC32A1	17	GABA	GAD2;SLC32A1		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC6A1	17	GABA	GAD2;SLC6A1		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC6A11	17	GABA	GAD2;SLC6A11		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC6A12	17	GABA	GAD2;SLC6A12		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC6A13	17	GABA	GAD2;SLC6A13		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC6A6	17	GABA	GAD2;SLC6A6		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GABA-GAD2_SLC6A8	17	GABA	GAD2;SLC6A8		right-walk	GABA	HMDB0000112	0	0					
+cellchatdb_human	GPHB5_GPHA2	1	GPHB5	GPHA2		right-walk			1	1	excluded: not a chemical ligand	EXCLUDE			peptide: thyrostimulin (GPHA2+GPHB5)
+cellchatdb_human	Glu-NRXN1_CBLN1	1	Glu	NRXN1;CBLN1		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC17A6_GLS	25	Glu	SLC17A6;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC17A6_GLS2	25	Glu	SLC17A6;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC17A7_GLS	25	Glu	SLC17A7;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC17A7_GLS2	25	Glu	SLC17A7;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC17A8_GLS	25	Glu	SLC17A8;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC17A8_GLS2	25	Glu	SLC17A8;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A1_GLS	25	Glu	SLC1A1;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A1_GLS2	25	Glu	SLC1A1;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A2_GLS	25	Glu	SLC1A2;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A2_GLS2	25	Glu	SLC1A2;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A3_GLS	25	Glu	SLC1A3;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A3_GLS2	25	Glu	SLC1A3;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A6_GLS	25	Glu	SLC1A6;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A6_GLS2	25	Glu	SLC1A6;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A7_GLS	25	Glu	SLC1A7;GLS		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Glu-SLC1A7_GLS2	25	Glu	SLC1A7;GLS2		right-walk	L-Glutamate	HMDB0000148	0	0					
+cellchatdb_human	Gly-SHMT1_SLC6A5	2	Gly	SHMT1;SLC6A5		right-walk	Glycine	HMDB0000123	0	0					
+cellchatdb_human	Gly-SHMT1_SLC6A9	2	Gly	SHMT1;SLC6A9		right-walk	Glycine	HMDB0000123	0	0					
+cellchatdb_human	Gly-SHMT2_SLC6A5	2	Gly	SHMT2;SLC6A5		right-walk	Glycine	HMDB0000123	0	0					
+cellchatdb_human	Gly-SHMT2_SLC6A9	2	Gly	SHMT2;SLC6A9		right-walk	Glycine	HMDB0000123	0	0					
+cellchatdb_human	Hist-HDC	4	Hist	HDC		right-walk	Histamine	HMDB0000870	0	0					
+cellchatdb_human	LTB4-LTA4H	2	LTB4	LTA4H		right-walk			0	0	chemical not found in any HMDB-keyed source	Leukotriene B4	HMDB0001085		LTA4H is leukotriene A4 hydrolase
+cellchatdb_human	LTC4-LTC4S	2	LTC4	LTC4S		right-walk			0	0	chemical not found in any HMDB-keyed source	Leukotriene C4	HMDB0001198		LTC4S is leukotriene C4 synthase
+cellchatdb_human	LTD4-GGT1	2	LTD4	GGT1		right-walk	LTD4	HMDB0003080	0	0					
+cellchatdb_human	LTE4-DPEP1	2	LTE4	DPEP1		right-walk	LTE4	HMDB0002200	0	0					
+cellchatdb_human	LTE4-DPEP2	2	LTE4	DPEP2		right-walk	LTE4	HMDB0002200	0	0					
+cellchatdb_human	LTE4-DPEP3	2	LTE4	DPEP3		right-walk	LTE4	HMDB0002200	0	0					
+cellchatdb_human	LXA4-ALOX12	1	LXA4	ALOX12		right-walk	LXA4	HMDB0004385	0	0					
+cellchatdb_human	LXA4-ALOX5	1	LXA4	ALOX5		right-walk	LXA4	HMDB0004385	0	0					
+cellchatdb_human	Melatonin-ASMT	2	Melatonin	ASMT		right-walk	Melatonin	HMDB0001389	0	0					
+cellchatdb_human	NE-DBH_SLC18A1	9	NE	DBH;SLC18A1		right-walk	Norepinephrine	HMDB0000216	0	0					
+cellchatdb_human	NE-DBH_SLC18A2	9	NE	DBH;SLC18A2		right-walk	Norepinephrine	HMDB0000216	0	0					
+cellchatdb_human	NE-DBH_SLC6A2	9	NE	DBH;SLC6A2		right-walk	Norepinephrine	HMDB0000216	0	0					
+cellchatdb_human	PGD2-AKR1C3	2	PGD2	AKR1C3		right-walk	PGD2	HMDB0001403	0	0					
+cellchatdb_human	PGD2-PTGDS	2	PGD2	PTGDS		right-walk	PGD2	HMDB0001403	0	0					
+cellchatdb_human	PGE2-PTGES	4	PGE2	PTGES		right-walk	Prostaglandin E2	HMDB0001220	0	0					
+cellchatdb_human	PGE2-PTGES2	4	PGE2	PTGES2		right-walk	Prostaglandin E2	HMDB0001220	0	0					
+cellchatdb_human	PGE2-PTGES3	4	PGE2	PTGES3		right-walk	Prostaglandin E2	HMDB0001220	0	0					
+cellchatdb_human	PGF2a-CBR1	1	PGF2a	CBR1		right-walk			0	0	chemical not found in any HMDB-keyed source	Prostaglandin F2a	HMDB0001139		prostaglandin F2alpha
+cellchatdb_human	PGF2a-PRXL2B	1	PGF2a	PRXL2B		right-walk			0	0	chemical not found in any HMDB-keyed source	Prostaglandin F2a	HMDB0001139		prostaglandin F2alpha
+cellchatdb_human	PGI2-PTGIS	1	PGI2	PTGIS		right-walk			0	0	chemical not found in any HMDB-keyed source	Prostaglandin I2	HMDB0001335		PTGIS is prostacyclin synthase
+cellchatdb_human	PNOC	1	PNOC			no-enzyme-found			1	1	excluded: not a chemical ligand	EXCLUDE			peptide: prepronociceptin
+cellchatdb_human	Pregnenolone-CYP11A1	1	Pregnenolone	CYP11A1		right-walk	Pregnenolone	HMDB0000253	0	0					
+cellchatdb_human	Progesterone-HSD3B1	8	Progesterone	HSD3B1		right-walk	Progesterone	HMDB0001830	0	0					
+cellchatdb_human	RA-ALDH1A1	10	RA	ALDH1A1		right-walk	Retinoic acid	HMDB0006219	0	0					
+cellchatdb_human	RA-ALDH1A2	10	RA	ALDH1A2		right-walk	Retinoic acid	HMDB0006219	0	0					
+cellchatdb_human	RA-ALDH1A3	10	RA	ALDH1A3		right-walk	Retinoic acid	HMDB0006219	0	0					
+cellchatdb_human	T3-DIO3	2	T3	DIO3		right-walk	T3	HMDB0000265	0	0					
+cellchatdb_human	TXA2-TBXAS1	1	TXA2	TBXAS1		right-walk	TXA-2	HMDB0001452	0	0					
+cellchatdb_human	Testosterone-AKR1D1	1	Testosterone	AKR1D1		right-walk	Testosterone	HMDB0000234	0	0					
+cellchatdb_human	Testosterone-HSD17B12	1	Testosterone	HSD17B12		right-walk	Testosterone	HMDB0000234	0	0					
+cellchatdb_human	Testosterone-HSD17B3	1	Testosterone	HSD17B3		right-walk	Testosterone	HMDB0000234	0	0					
+cellchatdb_human	b-Endorphin-POMC	3	b-Endorphin	POMC		right-walk			0	1	excluded: not a chemical ligand	EXCLUDE			peptide: beta-endorphin, POMC-derived
+cellphonedb_interactions	12oxoLeukotrieneB4_byPTGR1	2	12oxoLeukotrieneB4	PTGR1		right-walk			0	1	CONFIRM: as 12oxoLTB4, CellPhoneDB spelling	12-Keto-leukotriene B4	HMDB0004234		as 12oxoLTB4, CellPhoneDB spelling
+cellphonedb_interactions	22Hydroxycholesterol_byCYP11A1	1	22Hydroxycholesterol	CYP11A1		right-walk			0	1	CONFIRM: as 22HC, CellPhoneDB spelling	22b-Hydroxycholesterol	HMDB0004035		as 22HC, CellPhoneDB spelling
+cellphonedb_interactions	22Hydroxycholesterol_byCYP3A4	1	22Hydroxycholesterol	CYP3A4		right-walk			0	1	CONFIRM: as 22HC, CellPhoneDB spelling	22b-Hydroxycholesterol	HMDB0004035		as 22HC, CellPhoneDB spelling
+cellphonedb_interactions	2arachidonoylglycerol_byDAGLA	3	2arachidonoylglycerol	DAGLA		right-walk	2-arachidonoylglycerol	HMDB0004666	0	0					
+cellphonedb_interactions	2arachidonoylglycerol_byDAGLB	3	2arachidonoylglycerol	DAGLB		right-walk	2-arachidonoylglycerol	HMDB0004666	0	0					
+cellphonedb_interactions	5-HT_byTPH1_and_SLC18A1	13	5-HT	TPH1;SLC18A1		right-walk	Serotonin	HMDB0000259	0	0					
+cellphonedb_interactions	5-HT_byTPH1_and_SLC18A2	13	5-HT	TPH1;SLC18A2		right-walk	Serotonin	HMDB0000259	0	0					
+cellphonedb_interactions	5-HT_byTPH1_and_SLC6A4	13	5-HT	TPH1;SLC6A4		right-walk	Serotonin	HMDB0000259	0	0					
+cellphonedb_interactions	5-HT_byTPH2_and_SLC18A1	13	5-HT	TPH2;SLC18A1		right-walk	Serotonin	HMDB0000259	0	0					
+cellphonedb_interactions	5-HT_byTPH2_and_SLC18A2	13	5-HT	TPH2;SLC18A2		right-walk	Serotonin	HMDB0000259	0	0					
+cellphonedb_interactions	5-HT_byTPH2_and_SLC6A4	13	5-HT	TPH2;SLC6A4		right-walk	Serotonin	HMDB0000259	0	0					
+cellphonedb_interactions	5SHpETE_byALOX5	1	5SHpETE	ALOX5		right-walk	5S-HPETE		0	0	matched by name only, no HMDB id	5(S)-Hydroperoxyeicosatetraenoic acid	HMDB0001193		ALOX5 product; 5(S)-HPETE
+cellphonedb_interactions	5alphaDihydroprogesterone_byDHRS9	1	5alphaDihydroprogesterone	DHRS9		right-walk	5-alpha-Dihydroprogesterone	HMDB0003759	0	0					
+cellphonedb_interactions	Acetylcholine_byCHAT	13	Acetylcholine	CHAT		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellphonedb_interactions	Acetylcholine_byCHAT_and_SLC10A4	10	Acetylcholine	CHAT;SLC10A4		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellphonedb_interactions	Acetylcholine_byCHAT_and_SLC18A3	10	Acetylcholine	CHAT;SLC18A3		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellphonedb_interactions	Acetylcholine_byCHAT_and_SLC5A7	10	Acetylcholine	CHAT;SLC5A7		right-walk	Acetylcholine	HMDB0000895	0	0					
+cellphonedb_interactions	Adenosine_byNT5E_and_SLC29A1	4	Adenosine	NT5E;SLC29A1		right-walk	Adenosine	HMDB0000050	0	0					
+cellphonedb_interactions	Adenosine_byNT5E_and_SLC29A2	4	Adenosine	NT5E;SLC29A2		right-walk	Adenosine	HMDB0000050	0	0					
+cellphonedb_interactions	Adenosine_byNT5E_and_SLC29A3	4	Adenosine	NT5E;SLC29A3		right-walk	Adenosine	HMDB0000050	0	0					
+cellphonedb_interactions	Adenosine_byNT5E_and_SLC29A4	4	Adenosine	NT5E;SLC29A4		right-walk	Adenosine	HMDB0000050	0	0					
+cellphonedb_interactions	Adrenaline_byPNMT_and_SLC18A1	9	Adrenaline	PNMT;SLC18A1		right-walk	(-)-Adrenaline	HMDB0000068	0	0					
+cellphonedb_interactions	Adrenaline_byPNMT_and_SLC18A2	9	Adrenaline	PNMT;SLC18A2		right-walk	(-)-Adrenaline	HMDB0000068	0	0					
+cellphonedb_interactions	AldosteroneCorticosterone_byCYP11B2	2	AldosteroneCorticosterone	CYP11B2		right-walk			0	0	two chemicals fused upstream: Aldosterone + Corticosterone - split into 2 rows	Aldosterone|Corticosterone	HMDB0000037|HMDB0001547		fused upstream; split into two chemicals, '|' separated
+cellphonedb_interactions	Androstenedione_byCYP17A1	1	Androstenedione	CYP17A1		right-walk	Androstenedione	HMDB0000053	0	0					
+cellphonedb_interactions	Androsterone_byHSD17B6	1	Androsterone	HSD17B6		right-walk	Androsterone	HMDB0000031	0	0					
+cellphonedb_interactions	Calcitriol_byCYP27B1	1	Calcitriol	CYP27B1		right-walk	Calcitriol	HMDB0001903	0	0					
+cellphonedb_interactions	Cholesterol_byCEL	2	Cholesterol	CEL		right-walk	Cholesterol	HMDB0000067	0	0					
+cellphonedb_interactions	Cholesterol_byDHCR24	2	Cholesterol	DHCR24		right-walk	Cholesterol	HMDB0000067	0	0					
+cellphonedb_interactions	Cholesterol_byDHCR7	2	Cholesterol	DHCR7		right-walk	Cholesterol	HMDB0000067	0	0					
+cellphonedb_interactions	Cholesterol_byLIPA	2	Cholesterol	LIPA		right-walk	Cholesterol	HMDB0000067	0	0					
+cellphonedb_interactions	Corticosterone_byCYP11B1	2	Corticosterone	CYP11B1		right-walk	Corticosterone	HMDB0001547	0	0					
+cellphonedb_interactions	DHEAsulfate_bySULT1E1	3	DHEAsulfate	SULT1E1		right-walk	DHEA sulfate	HMDB0001032	0	0					
+cellphonedb_interactions	DHEAsulfate_bySULT2A1	3	DHEAsulfate	SULT2A1		right-walk	DHEA sulfate	HMDB0001032	0	0					
+cellphonedb_interactions	DHEAsulfate_bySULT2B	3	DHEAsulfate			no-enzyme-found			0	0	no gene symbol recognised in token	Dehydroepiandrosterone sulfate	HMDB0001032	SULT2B1	same compound, CellPhoneDB spelling
+cellphonedb_interactions	Dehydroepiandrosterone_bySTS	3	Dehydroepiandrosterone	STS		right-walk	Dehydroepiandrosterone	HMDB0000077	0	0					
+cellphonedb_interactions	Desmosterol_byDHCR7	2	Desmosterol	DHCR7		right-walk	Desmosterol	HMDB0002719	0	0					
+cellphonedb_interactions	Desoxycorticosterone_byCYP21A2	1	Desoxycorticosterone	CYP21A2		right-walk	DESOXYCORTICOSTERONE	HMDB0000016	0	0					
+cellphonedb_interactions	Dihydrotestosterone_bySRD5A1	1	Dihydrotestosterone	SRD5A1		right-walk	Dihydrotestosterone	HMDB0002961	0	0					
+cellphonedb_interactions	Dihydrotestosterone_bySRD5A2	1	Dihydrotestosterone	SRD5A2		right-walk	Dihydrotestosterone	HMDB0002961	0	0					
+cellphonedb_interactions	Dihydrotestosterone_bySRD5A3	1	Dihydrotestosterone	SRD5A3		right-walk	Dihydrotestosterone	HMDB0002961	0	0					
+cellphonedb_interactions	Dopamine_byDDC_and_SLC18A1	5	Dopamine	DDC;SLC18A1		right-walk	Dopamine	HMDB0000073	0	0					
+cellphonedb_interactions	Dopamine_byDDC_and_SLC18A2	5	Dopamine	DDC;SLC18A2		right-walk	Dopamine	HMDB0000073	0	0					
+cellphonedb_interactions	Dopamine_byDDC_and_SLC6A3	5	Dopamine	DDC;SLC6A3		right-walk	Dopamine	HMDB0000073	0	0					
+cellphonedb_interactions	Epinephrine_byPNMT	9	Epinephrine	PNMT		right-walk	Epinephrine	HMDB0000068	0	0					
+cellphonedb_interactions	Estradiol_byCYP19A1	4	Estradiol	CYP19A1		right-walk	Estradiol	HMDB0000151	0	0					
+cellphonedb_interactions	Estradiol_byHSD17B1	4	Estradiol	HSD17B1		right-walk	Estradiol	HMDB0000151	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC32A1	17	GABA	GAD1;SLC32A1		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC6A1	17	GABA	GAD1;SLC6A1		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC6A11	17	GABA	GAD1;SLC6A11		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC6A12	17	GABA	GAD1;SLC6A12		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC6A13	17	GABA	GAD1;SLC6A13		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC6A6	17	GABA	GAD1;SLC6A6		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD1_and_SLC6A8	17	GABA	GAD1;SLC6A8		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC32A1	17	GABA	GAD2;SLC32A1		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC6A1	17	GABA	GAD2;SLC6A1		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC6A11	17	GABA	GAD2;SLC6A11		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC6A12	17	GABA	GAD2;SLC6A12		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC6A13	17	GABA	GAD2;SLC6A13		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC6A6	17	GABA	GAD2;SLC6A6		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	GABA_byGAD2_and_SLC6A8	17	GABA	GAD2;SLC6A8		right-walk	GABA	HMDB0000112	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC17A6	25	Glutamate	GLS2;SLC17A6		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC17A7	25	Glutamate	GLS2;SLC17A7		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC17A8	25	Glutamate	GLS2;SLC17A8		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC1A1	25	Glutamate	GLS2;SLC1A1		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC1A2	25	Glutamate	GLS2;SLC1A2		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC1A3	25	Glutamate	GLS2;SLC1A3		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC1A6	25	Glutamate	GLS2;SLC1A6		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS2_and_SLC1A7	25	Glutamate	GLS2;SLC1A7		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC17A6	25	Glutamate	GLS;SLC17A6		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC17A7	25	Glutamate	GLS;SLC17A7		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC17A8	25	Glutamate	GLS;SLC17A8		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC1A1	25	Glutamate	GLS;SLC1A1		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC1A2	25	Glutamate	GLS;SLC1A2		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC1A3	25	Glutamate	GLS;SLC1A3		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC1A6	25	Glutamate	GLS;SLC1A6		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glutamate_byGLS_and_SLC1A7	25	Glutamate	GLS;SLC1A7		right-walk	Glutamate	HMDB0000148	0	0					
+cellphonedb_interactions	Glycine_bySHMT1_and_SLC6A5	2	Glycine	SHMT1;SLC6A5		right-walk	Glycine	HMDB0000123	0	0					
+cellphonedb_interactions	Glycine_bySHMT1_and_SLC6A9	2	Glycine	SHMT1;SLC6A9		right-walk	Glycine	HMDB0000123	0	0					
+cellphonedb_interactions	Glycine_bySHMT2_and_SLC6A5	2	Glycine	SHMT2;SLC6A5		right-walk	Glycine	HMDB0000123	0	0					
+cellphonedb_interactions	Glycine_bySHMT2_and_SLC6A9	2	Glycine	SHMT2;SLC6A9		right-walk	Glycine	HMDB0000123	0	0					
+cellphonedb_interactions	Histamine_byHDC	4	Histamine	HDC		right-walk	Histamine	HMDB0000870	0	0					
+cellphonedb_interactions	LTC4_byLTC4S	2	LTC4	LTC4S		right-walk			0	0	chemical not found in any HMDB-keyed source	Leukotriene C4	HMDB0001198		LTC4S is leukotriene C4 synthase
+cellphonedb_interactions	LTD4_byGGT1	2	LTD4	GGT1		right-walk	LTD4	HMDB0003080	0	0					
+cellphonedb_interactions	Ldopa_byTYR	1	Ldopa	TYR		right-walk	L-Dopa	HMDB0000181	0	0					
+cellphonedb_interactions	LeukotrieneB4_byLTA4H	3	LeukotrieneB4	LTA4H		right-walk	Leukotriene B4	HMDB0001085	0	0					
+cellphonedb_interactions	LeukotrieneC4_byLTC4S	3	LeukotrieneC4	LTC4S		right-walk	Leukotriene C4	HMDB0001198	0	0					
+cellphonedb_interactions	LeukotrieneD4_byGGT1	3	LeukotrieneD4	GGT1		right-walk	Leukotriene D4	HMDB0003080	0	0					
+cellphonedb_interactions	LeukotrieneE4_byDPEP1	2	LeukotrieneE4	DPEP1		right-walk	Leukotriene E4	HMDB0002200	0	0					
+cellphonedb_interactions	LeukotrieneE4_byDPEP2	2	LeukotrieneE4	DPEP2		right-walk	Leukotriene E4	HMDB0002200	0	0					
+cellphonedb_interactions	LeukotrieneE4_byDPEP3	2	LeukotrieneE4	DPEP3		right-walk	Leukotriene E4	HMDB0002200	0	0					
+cellphonedb_interactions	LipoxinA4_byALOX12	2	LipoxinA4	ALOX12		right-walk	Lipoxin A4	HMDB0004385	0	0					
+cellphonedb_interactions	LipoxinA4_byALOX5	2	LipoxinA4	ALOX5		right-walk	Lipoxin A4	HMDB0004385	0	0					
+cellphonedb_interactions	Lthyroxine_byTPO	1	Lthyroxine	TPO		right-walk	L-Thyroxine	HMDB0000248	0	0					
+cellphonedb_interactions	Melatonin_byASMT	2	Melatonin	ASMT		right-walk	Melatonin	HMDB0001389	0	0					
+cellphonedb_interactions	Noradrenaline_byDBH_and_SLC18A1	9	Noradrenaline	DBH;SLC18A1		right-walk	(-)-Noradrenaline	HMDB0000216	0	0					
+cellphonedb_interactions	Noradrenaline_byDBH_and_SLC18A2	9	Noradrenaline	DBH;SLC18A2		right-walk	(-)-Noradrenaline	HMDB0000216	0	0					
+cellphonedb_interactions	Noradrenaline_byDBH_and_SLC6A2	9	Noradrenaline	DBH;SLC6A2		right-walk	(-)-Noradrenaline	HMDB0000216	0	0					
+cellphonedb_interactions	PGD2_byPTGDS	2	PGD2	PTGDS		right-walk	PGD2	HMDB0001403	0	0					
+cellphonedb_interactions	Pregnenolone_byCYP11A1	1	Pregnenolone	CYP11A1		right-walk	Pregnenolone	HMDB0000253	0	0					
+cellphonedb_interactions	Progesterone_byHSD3B1	9	Progesterone	HSD3B1		right-walk	Progesterone	HMDB0001830	0	0					
+cellphonedb_interactions	Prostacyclin_byPTGIS	1	Prostacyclin	PTGIS		right-walk			0	0	chemical not found in any HMDB-keyed source	Prostaglandin I2	HMDB0001335		prostacyclin is prostaglandin I2
+cellphonedb_interactions	ProstaglandinD2_byAKR1C3	3	ProstaglandinD2	AKR1C3		right-walk	Prostaglandin D2	HMDB0001403	0	0					
+cellphonedb_interactions	ProstaglandinE2_byPTGES	4	ProstaglandinE2	PTGES		right-walk	Prostaglandin E2	HMDB0001220	0	0					
+cellphonedb_interactions	ProstaglandinE2_byPTGES2	4	ProstaglandinE2	PTGES2		right-walk	Prostaglandin E2	HMDB0001220	0	0					
+cellphonedb_interactions	ProstaglandinE2_byPTGES3	4	ProstaglandinE2	PTGES3		right-walk	Prostaglandin E2	HMDB0001220	0	0					
+cellphonedb_interactions	ProstaglandinF2a_byAKR1B1	1	ProstaglandinF2a	AKR1B1		right-walk	Prostaglandin F2a	HMDB0001139	0	0					
+cellphonedb_interactions	ProstaglandinF2a_byCBR1	1	ProstaglandinF2a	CBR1		right-walk	Prostaglandin F2a	HMDB0001139	0	0					
+cellphonedb_interactions	ProstaglandinF2a_byPRXL2B	1	ProstaglandinF2a	PRXL2B		right-walk	Prostaglandin F2a	HMDB0001139	0	0					
+cellphonedb_interactions	SerotoninDopamin_byDDC	22	SerotoninDopamin	DDC		right-walk			0	0	two chemicals fused upstream: Serotonin + Dopamin - split into 2 rows	Serotonin|Dopamine	HMDB0000259|HMDB0000073		fused upstream; split into two chemicals, '|' separated
+cellphonedb_interactions	Testosterone_byAKR1D1	1	Testosterone	AKR1D1		right-walk	Testosterone	HMDB0000234	0	0					
+cellphonedb_interactions	Testosterone_byHSD17B12	1	Testosterone	HSD17B12		right-walk	Testosterone	HMDB0000234	0	0					
+cellphonedb_interactions	Testosterone_byHSD17B3	1	Testosterone	HSD17B3		right-walk	Testosterone	HMDB0000234	0	0					
+cellphonedb_interactions	ThromboxaneA2_byTBXAS1	1	ThromboxaneA2	TBXAS1		right-walk	Thromboxane A2	HMDB0001452	0	0					
+cellphonedb_interactions	Triiodothyronine_byDIO3	2	Triiodothyronine	DIO3		right-walk	Triiodothyronine	HMDB0000265	0	0					
+cellphonedb_interactions	atRetinoicAcid_byALDH1A1	10	atRetinoicAcid	ALDH1A1		right-walk			0	0	chemical not found in any HMDB-keyed source	all-trans-Retinoic acid	HMDB0001852		ALDH1A1/2/3 oxidise retinal
+cellphonedb_interactions	atRetinoicAcid_byALDH1A2	10	atRetinoicAcid	ALDH1A2		right-walk			0	0	chemical not found in any HMDB-keyed source	all-trans-Retinoic acid	HMDB0001852		ALDH1A1/2/3 oxidise retinal
+cellphonedb_interactions	atRetinoicAcid_byALDH1A3	10	atRetinoicAcid	ALDH1A3		right-walk			0	0	chemical not found in any HMDB-keyed source	all-trans-Retinoic acid	HMDB0001852		ALDH1A1/2/3 oxidise retinal
+cellphonedb_interactions	b-Endorphin_byPOMC	3	b-Endorphin	POMC		right-walk			0	1	excluded: not a chemical ligand	EXCLUDE			peptide: beta-endorphin, POMC-derived
+cellphonedb_interactions	b-PEA_byDDC	1	b-PEA	DDC		right-walk			0	0	chemical not found in any HMDB-keyed source	Phenethylamine	HMDB0012275		beta-phenylethylamine; DDC decarboxylates phenylalanine
+cellphonedb_interactions	hCGB1_complex	1	hCGB1_complex			no-enzyme-found			0	1	excluded: not a chemical ligand	EXCLUDE			protein complex, not a metabolite
+cellphonedb_interactions	hCGB2_complex	1	hCGB2_complex			no-enzyme-found			0	1	excluded: not a chemical ligand	EXCLUDE			protein complex, not a metabolite
+cellphonedb_interactions	hCGB3_complex	1	hCGB3_complex			no-enzyme-found			0	1	excluded: not a chemical ligand	EXCLUDE			protein complex, not a metabolite
+cellphonedb_interactions	hCGB7_complex	1	hCGB7_complex			no-enzyme-found			0	1	excluded: not a chemical ligand	EXCLUDE			protein complex, not a metabolite

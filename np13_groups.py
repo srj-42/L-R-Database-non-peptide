@@ -7,7 +7,8 @@ Writes work/np13_groups.json:  {group_key: {label, chemical_id, chemical, pairs:
 """
 import json, re, sqlite3, collections
 DB = "/home/sreeja/omics/database/curation/curation.db"
-FAM = [  # (regex on HGNC symbol, label, regex a paper uses for the complex)
+FAM = [(r"^NR1H[23]$", "liver X receptor (LXR)", r"LXR|liver X"),
+         # (regex on HGNC symbol, label, regex a paper uses for the complex)
     (r"^GABR[ABGDEPQ]\d*$", "GABA-A receptor", r"GABA\s*\(?A\)?|GABAA|GABA-A"),
     (r"^GABRR\d$", "GABA-C (rho) receptor", r"GABA\s*\(?C\)?|GABAC|rho"),
     (r"^CHRN[ABDEG]\d*$", "nicotinic acetylcholine receptor", r"nicotinic|nAChR"),

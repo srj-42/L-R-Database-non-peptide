@@ -118,6 +118,52 @@ def main() -> int:
         out / "chemical_entities.csv",
         chem_cols + ["n_sources", "sources", "provisional_identity"], chem_rows)
 
+    # ---- chemical_context (np20, 2026-11-06): HMDB tissue / cell location /
+    # biospecimen / disease per metabolite. Describes the molecule, not the pair.
+    ctx_rows = [tuple(r) for r in c.execute(
+        "SELECT chemical_id, kind, value, source FROM chemical_context "
+        "ORDER BY chemical_id, kind, value") if r[0] in shipped_chem]
+    counts["chemical_context"] = write(
+        out / "chemical_context.csv", ["chemical_id", "kind", "value", "source"], ctx_rows)
+
+    # ---- chemical_pathway / chemical_ontology (np21, 2026-11-06): HMDB, per
+    # metabolite. Pathways ship at FAMILY level (lipid-species variants merged; the raw
+    # ~210k rows stay in curation.db); the ontology ships in full.
+    pw_rows = [tuple(r) for r in c.execute(
+        "SELECT chemical_id, family, COUNT(*) n_entries, "
+        "CASE WHEN COUNT(*)=1 THEN MAX(smpdb_id) ELSE '' END, MAX(kegg_map_id), MIN(source) "
+        "FROM chemical_pathway GROUP BY chemical_id, family ORDER BY chemical_id, family")
+        if r[0] in shipped_chem]
+    counts["chemical_pathways"] = write(
+        out / "chemical_pathways.csv",
+        ["chemical_id", "pathway", "n_entries", "smpdb_id", "kegg_map_id", "source"], pw_rows)
+    on_rows = [tuple(r) for r in c.execute(
+        "SELECT chemical_id, root, path, term, level, node_type, source FROM chemical_ontology "
+        "ORDER BY chemical_id, path") if r[0] in shipped_chem]
+    counts["chemical_ontology"] = write(
+        out / "chemical_ontology.csv",
+        ["chemical_id", "root", "path", "term", "level", "node_type", "source"], on_rows)
+
+    # ---- chemical_gene_roots (np22, 2026-11-07): ligand genes from ROOT sources
+    # (Human-GEM, Rhea/UniProt, TCDB, HMDB, Reactome, experimental GO), aggregated per
+    # chemical x gene x role. Reactome rows ship only where they bear on a listed gene.
+    # Precursor and organelle-transport rows stay in curation.db (ligand_gene_root).
+    gr_rows = []
+    for r in c.execute("""SELECT chemical_id, gene_symbol, role,
+               GROUP_CONCAT(DISTINCT source), MIN(reversible), MAX(experimental)
+               FROM ligand_gene_root
+               WHERE role IN ('synthesis','degradation','efflux','influx','transport','associated')
+                 AND (source != 'reactome' OR EXISTS (SELECT 1 FROM metabolite_enzyme_support s
+                      WHERE s.chemical_id = ligand_gene_root.chemical_id
+                        AND s.gene_symbol_hgnc = ligand_gene_root.gene_symbol))
+               GROUP BY chemical_id, gene_symbol, role ORDER BY chemical_id, gene_symbol, role"""):
+        if r[0] in shipped_chem:
+            gr_rows.append((r[0], r[1], r[2], "|".join(sorted(r[3].split(","))), 1 - r[4], r[5]))
+    counts["chemical_gene_roots"] = write(
+        out / "chemical_gene_roots.csv",
+        ["chemical_id", "gene_symbol", "role", "sources", "has_directed_reaction", "rhea_experimental"],
+        gr_rows)
+
     # ---- chemical_interactions -------------------------------------------
     inter_rows, shipped_inter = [], set()
     for r in c.execute("""SELECT ci.chem_interaction_id, ci.chemical_id, ch.name chem_name,
@@ -150,19 +196,36 @@ def main() -> int:
          "has_citation", "n_pmids", "verification_status"], inter_rows)
 
     # ---- metabolite_enzymes ------------------------------------------------
-    enz_rows = [tuple(r) for r in c.execute(
-        """SELECT me.chemical_id, ch.hmdb_id, ch.name, me.gene_symbol, me.entity_id,
-                  me.role, me.direction_known, me.source_id, me.raw_role
-             FROM metabolite_enzymes me
-             JOIN chemical_entities ch ON ch.chemical_id = me.chemical_id
-            WHERE me.source_id NOT IN (%s) AND ch.shippable = 1
-            ORDER BY me.chemical_id, me.role, me.gene_symbol"""
-        % ",".join("?" * len(NON_SHIPPABLE)), tuple(sorted(NON_SHIPPABLE)))
-        if r[0] in shipped_chem]
+    # 2026-11-09 (owner): the released gene set is ligand_gene_set (np23), rebuilt from the
+    # raw sources Human-GEM + Rhea (directed reactions only). Chemicals with no raw-source genes
+    # keep their aggregated genes (origin = lr_fallback). Cofactor hubs get no genes and are
+    # listed in chemical_gene_hubs.csv. The aggregated table metabolite_enzymes stays in
+    # curation.db as provenance only. File name kept for compatibility.
+    blocked = {s.lower() for s in NON_SHIPPABLE} | {"mebocost"}
+    def clean_list(x):
+        return "|".join(v for v in (x or "").split("|") if v and not any(b in v.lower() for b in blocked))
+    enz_rows = []
+    for r in c.execute(
+        """SELECT g.chemical_id, ch.hmdb_id, ch.name, g.gene_symbol, g.role, g.origin, g.sources,
+                  g.ref_ids, g.also_listed_by
+             FROM ligand_gene_set g JOIN chemical_entities ch ON ch.chemical_id = g.chemical_id
+            WHERE g.origin IN ('raw', 'lr_fallback') AND ch.shippable = 1
+            ORDER BY g.chemical_id, g.role, g.gene_symbol"""):
+        if r[0] not in shipped_chem:
+            continue
+        for src in (r[6] or "").split("|"):
+            if not src or any(b in src.lower() for b in blocked):
+                continue
+            enz_rows.append((r[0], r[1], r[2], r[3], r[4], r[5], src, r[7] if r[5] == "raw" else "",
+                             clean_list(r[8]), 1))
     counts["metabolite_enzymes"] = write(
         out / "metabolite_enzymes.csv",
-        ["chemical_id", "hmdb_id", "chemical_name", "gene_symbol", "entity_id", "role",
-         "direction_known", "source_id", "raw_role"], enz_rows)
+        ["chemical_id", "hmdb_id", "chemical_name", "gene_symbol", "role", "origin", "source_id",
+         "reactions", "also_listed_by", "direction_known"], enz_rows)
+    hub_rows = [(r[0], r[1]) for r in c.execute(
+        """SELECT g.chemical_id, ch.name FROM ligand_gene_set g JOIN chemical_entities ch
+           ON ch.chemical_id = g.chemical_id WHERE g.origin = 'hub_cofactor'""") if r[0] in shipped_chem]
+    counts["chemical_gene_hubs"] = write(out / "chemical_gene_hubs.csv", ["chemical_id", "chemical_name"], hub_rows)
 
     # ---- chemical evidence -------------------------------------------------
     # New 2026-10-09. Until now the chemical half shipped provenance only, because it
@@ -221,6 +284,29 @@ def main() -> int:
             r["evidence_sentence"], r["extraction_method"], r["verified_at"]))
     counts["chemical_evidence"] = write(out / "chemical_evidence.csv", ev_cols, ev_rows)
 
+    # ---- non-literature evidence classes ------------------------------------
+    # New 2026-10-15 (CITATION_METHODS.md, Methods 3 and 4). nomenclature_evident and
+    # database_annotated rows are not sentence-verified, so they never enter
+    # chemical_evidence.csv; they ship in their own file with their class named.
+    cls_rows = []
+    has_cls = c.execute("SELECT 1 FROM sqlite_master WHERE name='np_class_evidence'").fetchone()
+    for r in (c.execute("""SELECT ce.class_evidence_id, ce.chem_interaction_id, ch.name chem_name,
+                                  e.symbol receptor_symbol, ce.evidence_class, ce.confidence,
+                                  ce.source, ce.accession, ce.detail, ce.pmid, ce.created_at
+                             FROM np_class_evidence ce
+                             JOIN chemical_interactions ci
+                               ON ci.chem_interaction_id = ce.chem_interaction_id
+                             JOIN chemical_entities ch ON ch.chemical_id = ci.chemical_id
+                             JOIN entities e ON e.entity_id = ci.receptor_entity_id
+                            ORDER BY ch.name, e.symbol""") if has_cls else []):
+        if r["chem_interaction_id"] in shipped_inter:
+            cls_rows.append(tuple(r))
+    counts["chemical_class_evidence"] = write(
+        out / "chemical_class_evidence.csv",
+        ["class_evidence_id", "chem_interaction_id", "chemical_name", "receptor_symbol",
+         "evidence_class", "confidence", "source", "accession", "detail", "pmid", "created_at"],
+        cls_rows)
+
     # ---- provenance --------------------------------------------------------
     prov_rows = [tuple(r) for r in c.execute(
         """SELECT source_id, chem_interaction_id, chemical_id, raw_ligand,
@@ -240,7 +326,9 @@ def main() -> int:
     blocked_lower = {s.lower() for s in NON_SHIPPABLE} | {"mebocost"}
     for name in ("chemical_entities.csv", "chemical_interactions.csv",
                  "metabolite_enzymes.csv", "chemical_source_records.csv",
-                 "chemical_evidence.csv"):
+                 "chemical_evidence.csv", "chemical_context.csv",
+                 "chemical_pathways.csv", "chemical_ontology.csv",
+                 "chemical_gene_roots.csv"):
         text = (out / name).read_text(encoding="utf-8").lower()
         for token in blocked_lower:
             if token in text:

@@ -1,0 +1,59 @@
+------------------------------------------------------------------------------------------
+PROMPT 2 — CANDIDATE GENERATION  (secondary; produces leads, never verdicts)
+------------------------------------------------------------------------------------------
+
+Use only to propose pairs for checking. Anything this prompt returns enters the database as
+a CANDIDATE at 'pending' and leaves that state through Prompt 1, whose answers are
+written to 'confirmed' once the load gates pass (no curator read required since 2026-10-09).
+
+system_content:
+
+You are a biomedical research assistant. For a given endogenous small molecule, list the
+human proteins reported to be its direct receptors or sensors, using real-time search.
+
+Rules:
+
+1. Output official HGNC gene symbols only.
+2. Separate symbols with commas. No other text.
+3. Include only proteins reported to BIND the molecule or to be DIRECTLY ACTIVATED or
+   INHIBITED by it. Exclude enzymes that make or break it and transporters that move it,
+   unless that protein is also reported to signal in response to it.
+4. Exclude proteins linked to the molecule only by co-expression, pathway membership or
+   text-mining.
+5. Where a receptor is a complex, list the subunits reported to contact the molecule.
+
+user_content:
+
+For {chemical_name} ({identifier_type}: {identifier}), list up to 15 human receptors that
+directly bind it or are directly activated or inhibited by it. If fewer than 15 are
+reported, list only those.
+
+------------------------------------------------------------------------------------------
+NOTES FOR WHOEVER RUNS THESE
+------------------------------------------------------------------------------------------
+
+- Always fill {identifier} — HMDB where the chemical has one, otherwise PubChem CID, ChEBI
+  or InChIKey. 590 of the 689 chemicals in this build carry an HMDB id; the remaining 99 are
+  name-keyed only and are exactly the ones most likely to be confused with a near neighbour.
+
+- Fill {synonyms} from the chemical's recorded synonym list, and include the Greek-letter
+  form if one exists. No source in this build publishes Greek-letter spellings, but the
+  primary literature uses them throughout.
+
+- A returned PMID is written straight to 'confirmed' once the mechanical gates pass: the
+  PMID resolves, the paper is not a review or retracted, the quoted sentence is verbatim in
+  the genuine source (abstract, or real publisher full text), and the molecule and receptor
+  names both occur in that text. No separate human read is required. (Changed 2026-10-09 at
+  the project owner's instruction; before that a curator read was mandatory.)
+  'confirmed' therefore now means "machine-verified against the source text", not "a person
+  read the paper". extraction_method='llm_litsearch_np_prompt' records which rows these are.
+  The verbatim gate is the load step's own check and is not optional - it is what stops the
+  2026-09-03 self-referential-evidence incident recurring (PLAN.md invariants 8-12).
+
+- Expect a high rejection rate and treat it as the prompt working. On the first batch of
+  chemical-half citations checked by hand, 118 of 225 rows rested on a single tool paper and
+  106 more could not be settled from the abstract; one row in 225 survived as a confirmation.
+
+
+
+

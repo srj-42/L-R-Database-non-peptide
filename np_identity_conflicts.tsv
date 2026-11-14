@@ -1,0 +1,298 @@
+kind	name	source_id	field	kept	discarded
+expected: depositor-specific	Adenosine monophosphate	mrclinkdb_human_mr	pubchem_sid	348274214	53801012
+expected: depositor-specific	Cholesterol	mrclinkdb_human_mr	pubchem_sid	348274229	135651457
+expected: depositor-specific	Dopamine	mrclinkdb_human_mr	pubchem_sid	348274234	175268815
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	135651489
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	135651489
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	135651489
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	gamma-Aminobutyric acid	mrclinkdb_human_mr	pubchem_sid	348274253	53787638
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	312525266
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	312525266
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	312525266
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	312525266
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	312525266
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	135651492
+expected: depositor-specific	Glycine	mrclinkdb_human_mr	pubchem_sid	348274260	312525266
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Glutamic acid	mrclinkdb_human_mr	pubchem_sid	348274277	349974520
+expected: depositor-specific	L-Phenylalanine	mrclinkdb_human_mr	pubchem_sid	348274286	178100347
+expected: depositor-specific	L-Dopa	mrclinkdb_human_mr	pubchem_sid	348274299	178100545
+expected: depositor-specific	L-Lysine	mrclinkdb_human_mr	pubchem_sid	348274300	135651507
+expected: depositor-specific	L-Serine	mrclinkdb_human_mr	pubchem_sid	348274302	135651510
+expected: depositor-specific	L-Aspartic acid	mrclinkdb_human_mr	pubchem_sid	348274305	135651597
+expected: depositor-specific	L-Aspartic acid	mrclinkdb_human_mr	pubchem_sid	348274305	135651597
+expected: depositor-specific	L-Aspartic acid	mrclinkdb_human_mr	pubchem_sid	348274305	135651597
+expected: depositor-specific	L-Aspartic acid	mrclinkdb_human_mr	pubchem_sid	348274305	135651597
+expected: depositor-specific	L-Aspartic acid	mrclinkdb_human_mr	pubchem_sid	348274305	135651597
+expected: depositor-specific	Oleic acid	mrclinkdb_human_mr	pubchem_sid	348274315	135651531
+expected: depositor-specific	Oleic acid	mrclinkdb_human_mr	pubchem_sid	348274315	135651531
+expected: depositor-specific	Oleic acid	mrclinkdb_human_mr	pubchem_sid	348274315	135651531
+expected: depositor-specific	Ornithine	mrclinkdb_human_mr	pubchem_sid	348274322	135651508
+expected: depositor-specific	Norepinephrine	mrclinkdb_human_mr	pubchem_sid	348274324	53788371
+expected: depositor-specific	Norepinephrine	mrclinkdb_human_mr	pubchem_sid	348274324	53788371
+expected: depositor-specific	Succinic acid	mrclinkdb_human_mr	pubchem_sid	348274356	178100544
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	135651413
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	175266816
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	175266816
+expected: depositor-specific	Serotonin	mrclinkdb_human_mr	pubchem_sid	348274360	175266816
+expected: depositor-specific	Uridine diphosphate glucose	mrclinkdb_human_mr	pubchem_sid	348274375	135651586
+expected: depositor-specific	Vitamin A	mrclinkdb_human_mr	pubchem_sid	348274391	178100877
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Adenosine triphosphate	mrclinkdb_human_mr	pubchem_sid	348274596	135651446
+expected: depositor-specific	Sodium	mrclinkdb_human_mr	pubchem_sid	348274640	135652743
+expected: depositor-specific	Sodium	mrclinkdb_human_mr	pubchem_sid	348274640	135652743
+expected: depositor-specific	Sodium	mrclinkdb_human_mr	pubchem_sid	348274640	135652743
+expected: depositor-specific	Sodium	mrclinkdb_human_mr	pubchem_sid	348274640	135652743
+expected: depositor-specific	L-Glutamine	mrclinkdb_human_mr	pubchem_sid	348274682	135651502
+expected: depositor-specific	Linoleic acid	mrclinkdb_human_mr	pubchem_sid	348274712	135651503
+expected: depositor-specific	Linoleic acid	mrclinkdb_human_mr	pubchem_sid	348274712	135651503
+expected: depositor-specific	Linoleic acid	mrclinkdb_human_mr	pubchem_sid	348274712	135651503
+expected: depositor-specific	Myristic acid	mrclinkdb_human_mr	pubchem_sid	348274825	178100239
+expected: depositor-specific	Myristic acid	mrclinkdb_human_mr	pubchem_sid	348274825	178100239
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	Acetylcholine	mrclinkdb_human_mr	pubchem_sid	348274896	2096
+expected: depositor-specific	L-Tryptophan	mrclinkdb_human_mr	pubchem_sid	348274923	135651515
+expected: depositor-specific	L-Tryptophan	mrclinkdb_human_mr	pubchem_sid	348274923	135651515
+expected: depositor-specific	Farnesyl pyrophosphate	mrclinkdb_human_mr	pubchem_sid	135651580	135651487
+expected: depositor-specific	Farnesyl pyrophosphate	mrclinkdb_human_mr	pubchem_sid	135651580	135651487
+expected: depositor-specific	Farnesyl pyrophosphate	mrclinkdb_human_mr	pubchem_sid	135651580	135651487
+expected: depositor-specific	Farnesyl pyrophosphate	mrclinkdb_human_mr	pubchem_sid	135651580	135651487
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	mrclinkdb_human_mr	pubchem_sid	348275003	135651442
+expected: depositor-specific	Leukotriene B4	mrclinkdb_human_mr	pubchem_sid	348275035	53801088
+expected: depositor-specific	Leukotriene B4	mrclinkdb_human_mr	pubchem_sid	348275035	53801088
+expected: depositor-specific	Spermine	mrclinkdb_human_mr	pubchem_sid	348275152	135651562
+expected: depositor-specific	Spermine	mrclinkdb_human_mr	pubchem_sid	348275152	135651562
+expected: depositor-specific	alpha-Linolenic acid	mrclinkdb_human_mr	pubchem_sid	348275255	135651436
+expected: depositor-specific	alpha-Linolenic acid	mrclinkdb_human_mr	pubchem_sid	348275255	135651436
+expected: depositor-specific	Putrescine	mrclinkdb_human_mr	pubchem_sid	348275274	135651553
+expected: depositor-specific	Corticosterone	mrclinkdb_human_mr	pubchem_sid	348275372	135651462
+expected: depositor-specific	27-Hydroxycholesterol	mrclinkdb_human_mr	pubchem_sid	348275596	135651393
+expected: depositor-specific	27-Hydroxycholesterol	mrclinkdb_human_mr	pubchem_sid	348275596	135651393
+expected: depositor-specific	27-Hydroxycholesterol	mrclinkdb_human_mr	pubchem_sid	348275596	135651393
+expected: depositor-specific	Docosahexaenoic acid	mrclinkdb_human_mr	pubchem_sid	348275654	135651477
+expected: depositor-specific	Lipoxin A4	mrclinkdb_human_mr	pubchem_sid	348276317	135651504
+expected: depositor-specific	Lipoxin A4	mrclinkdb_human_mr	pubchem_sid	348276317	135651504
+expected: depositor-specific	12-HETE	mrclinkdb_human_mr	pubchem_sid	348276834	135651372
+expected: depositor-specific	25-Hydroxycholesterol	mrclinkdb_human_mr	pubchem_sid	348276869	135651392
+expected: depositor-specific	25-Hydroxycholesterol	mrclinkdb_human_mr	pubchem_sid	348276869	135651392
+fused ligand: cannot name one constituent	Benzamide,3,5-Dihydroxybenzoic acid	metaligand_pairs_human	hmdb_id	HMDB0004461	HMDB0004461,HMDB0013677
+fused ligand: cannot name one constituent	Benzamide,3,5-Dihydroxybenzoic acid	metaligand_pairs_human	hmdb_id	HMDB0013677	HMDB0004461,HMDB0013677
+fused ligand: cannot name one constituent	Leukotriene C4	metaligand_pairs_human	hmdb_id	HMDB0005095	HMDB0001198,HMDB0005095
+fused ligand: cannot name one constituent	Prostaglandin F2a	metaligand_pairs_human	hmdb_id	HMDB0010199	HMDB0001139,HMDB0010199
+name maps to two HMDB ids	()-alpha-Narcotine	metalinksdb	hmdb_id	HMDB0033439	HMDB0033441
+field disagreement	(-)-alpha-Narcotine	metalinksdb	pubchem_cid	275196	4544
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Dihydrotestosterone	gtopdb_interactions	pubchem_sid	348275927	135651474
+expected: depositor-specific	Adenosine	gtopdb_interactions	pubchem_sid	348274216	135651426
+expected: depositor-specific	Adenosine	gtopdb_interactions	pubchem_sid	348274216	135651426
+expected: depositor-specific	Adenosine	gtopdb_interactions	pubchem_sid	348274216	135651426
+expected: depositor-specific	Adenosine	gtopdb_interactions	pubchem_sid	348274216	135651426
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651526
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651526
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651430
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651527
+expected: depositor-specific	Epinephrine	gtopdb_interactions	pubchem_sid	348274230	135651547
+expected: depositor-specific	Spermine	gtopdb_interactions	pubchem_sid	348275152	135651562
+expected: depositor-specific	L-Tryptophan	gtopdb_interactions	pubchem_sid	348274923	135651515
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Progesterone	gtopdb_interactions	pubchem_sid	348275398	135651551
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Progesterone	gtopdb_interactions	pubchem_sid	348275398	135651551
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Progesterone	gtopdb_interactions	pubchem_sid	348275398	135651551
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Progesterone	gtopdb_interactions	pubchem_sid	348275398	135651551
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Dopamine	gtopdb_interactions	pubchem_sid	348274234	135651480
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651526
+expected: depositor-specific	Dopamine	gtopdb_interactions	pubchem_sid	348274234	135651480
+expected: depositor-specific	Dopamine	gtopdb_interactions	pubchem_sid	348274234	135651480
+expected: depositor-specific	Dopamine	gtopdb_interactions	pubchem_sid	348274234	135651480
+expected: depositor-specific	Dopamine	gtopdb_interactions	pubchem_sid	348274234	135651480
+expected: depositor-specific	Norepinephrine	gtopdb_interactions	pubchem_sid	348274324	135651526
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Estriol	gtopdb_interactions	pubchem_sid	348274282	135651483
+expected: depositor-specific	Estrone	gtopdb_interactions	pubchem_sid	348274276	135651484
+expected: depositor-specific	Estrone	gtopdb_interactions	pubchem_sid	348274276	135651484
+expected: depositor-specific	Chenodeoxycholic acid	gtopdb_interactions	pubchem_sid	348274579	135651455
+expected: depositor-specific	Docosahexaenoic acid	gtopdb_interactions	pubchem_sid	348275654	135651477
+expected: depositor-specific	Myristic acid	gtopdb_interactions	pubchem_sid	348274825	178100239
+expected: depositor-specific	Oleic acid	gtopdb_interactions	pubchem_sid	348274315	135651531
+expected: depositor-specific	Linoleic acid	gtopdb_interactions	pubchem_sid	348274712	135651503
+expected: depositor-specific	Myristic acid	gtopdb_interactions	pubchem_sid	348274825	178100239
+expected: depositor-specific	Oleic acid	gtopdb_interactions	pubchem_sid	348274315	135651531
+expected: depositor-specific	Lipoxin A4	gtopdb_interactions	pubchem_sid	348276317	135651504
+expected: depositor-specific	Lipoxin A4	gtopdb_interactions	pubchem_sid	348276317	135651504
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	gamma-Aminobutyric acid	gtopdb_interactions	pubchem_sid	348274253	135651489
+expected: depositor-specific	Cortisol	gtopdb_interactions	pubchem_sid	348274227	53801089
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	L-Aspartic acid	gtopdb_interactions	pubchem_sid	348274305	135651597
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	L-Aspartic acid	gtopdb_interactions	pubchem_sid	348274305	135651597
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	L-Aspartic acid	gtopdb_interactions	pubchem_sid	348274305	135651597
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	L-Aspartic acid	gtopdb_interactions	pubchem_sid	348274305	135651597
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	L-Aspartic acid	gtopdb_interactions	pubchem_sid	348274305	135651597
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	Chenodeoxycholic acid	gtopdb_interactions	pubchem_sid	348274579	135651455
+expected: depositor-specific	L-Lactic acid	gtopdb_interactions	pubchem_sid	348274304	135651506
+expected: depositor-specific	Linoleic acid	gtopdb_interactions	pubchem_sid	348274712	135651503
+expected: depositor-specific	Histamine	gtopdb_interactions	pubchem_sid	348274875	135651493
+expected: depositor-specific	Histamine	gtopdb_interactions	pubchem_sid	348274875	135651493
+expected: depositor-specific	Histamine	gtopdb_interactions	pubchem_sid	348274875	135651493
+expected: depositor-specific	L-Phenylalanine	gtopdb_interactions	pubchem_sid	348274286	178100347
+expected: depositor-specific	L-Phenylalanine	gtopdb_interactions	pubchem_sid	348274286	178100347
+expected: depositor-specific	L-Phenylalanine	gtopdb_interactions	pubchem_sid	348274286	178100347
+expected: depositor-specific	L-Tryptophan	gtopdb_interactions	pubchem_sid	348274923	135651515
+expected: depositor-specific	L-Tryptophan	gtopdb_interactions	pubchem_sid	348274923	135651515
+expected: depositor-specific	L-Tryptophan	gtopdb_interactions	pubchem_sid	348274923	135651515
+expected: depositor-specific	25-Hydroxycholesterol	gtopdb_interactions	pubchem_sid	348276869	135651392
+expected: depositor-specific	27-Hydroxycholesterol	gtopdb_interactions	pubchem_sid	348275596	135651393
+expected: depositor-specific	Lipoxin A4	gtopdb_interactions	pubchem_sid	348276317	135651504
+expected: depositor-specific	Glycine	gtopdb_interactions	pubchem_sid	348274260	135651492
+expected: depositor-specific	L-Arginine	gtopdb_interactions	pubchem_sid	348274578	135651500
+expected: depositor-specific	L-Glutamine	gtopdb_interactions	pubchem_sid	348274682	135651502
+expected: depositor-specific	L-Lysine	gtopdb_interactions	pubchem_sid	348274300	135651507
+expected: depositor-specific	L-Serine	gtopdb_interactions	pubchem_sid	348274302	135651510
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Putrescine	gtopdb_interactions	pubchem_sid	348275274	135651553
+expected: depositor-specific	Spermine	gtopdb_interactions	pubchem_sid	348275152	135651562
+expected: depositor-specific	27-Hydroxycholesterol	gtopdb_interactions	pubchem_sid	348275596	135651393
+expected: depositor-specific	27-Hydroxycholesterol	gtopdb_interactions	pubchem_sid	348275596	135651393
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	L-Glutamic acid	gtopdb_interactions	pubchem_sid	348274277	135651501
+expected: depositor-specific	Corticosterone	gtopdb_interactions	pubchem_sid	348275372	135651462
+expected: depositor-specific	Cortisol	gtopdb_interactions	pubchem_sid	348274227	53801089
+expected: depositor-specific	Progesterone	gtopdb_interactions	pubchem_sid	348275398	135651551
+expected: depositor-specific	Acetylcholine	gtopdb_interactions	pubchem_sid	348274896	135651424
+expected: depositor-specific	Acetylcholine	gtopdb_interactions	pubchem_sid	348274896	135651424
+expected: depositor-specific	Acetylcholine	gtopdb_interactions	pubchem_sid	348274896	135651424
+expected: depositor-specific	Acetylcholine	gtopdb_interactions	pubchem_sid	348274896	135651424
+expected: depositor-specific	Acetylcholine	gtopdb_interactions	pubchem_sid	348274896	135651424
+expected: depositor-specific	Melatonin	gtopdb_interactions	pubchem_sid	348275256	135651518
+expected: depositor-specific	Melatonin	gtopdb_interactions	pubchem_sid	348275256	135651518
+expected: depositor-specific	Linoleic acid	gtopdb_interactions	pubchem_sid	348274712	135651503
+expected: depositor-specific	Oleic acid	gtopdb_interactions	pubchem_sid	348274315	135651531
+expected: depositor-specific	Progesterone	gtopdb_interactions	pubchem_sid	348275398	135651551
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Cholesterol	gtopdb_interactions	pubchem_sid	348274229	135651457
+expected: depositor-specific	25-Hydroxycholesterol	gtopdb_interactions	pubchem_sid	348276869	135651392
+expected: depositor-specific	Heme	gtopdb_interactions	pubchem_sid	348275981	178101166
+expected: depositor-specific	Heme	gtopdb_interactions	pubchem_sid	348275981	178101166
+expected: depositor-specific	Succinic acid	gtopdb_interactions	pubchem_sid	348274356	178100544
+expected: depositor-specific	Liothyronine	gtopdb_interactions	pubchem_sid	348274363	135651573
+expected: depositor-specific	Liothyronine	gtopdb_interactions	pubchem_sid	348274363	135651573
+expected: depositor-specific	Prostaglandin E2	gtopdb_interactions	pubchem_sid	348275131	135651539
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442
+expected: depositor-specific	Arachidonic acid	gtopdb_interactions	pubchem_sid	348275003	135651442

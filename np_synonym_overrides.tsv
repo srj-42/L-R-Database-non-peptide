@@ -1,0 +1,10 @@
+# Curated chemical synonyms added by hand during verification (np9).
+# np2 builds chemical_entities.synonyms from source synonym lists, which are
+# incomplete: several chemicals arrive with none at all, and none of the sources
+# carries the Greek-letter forms used in the primary literature. Without the
+# literature form the np9 name gate cannot match a real abstract.
+# Applied by np2b_synonyms.py, which is idempotent and safe to re-run after np2.
+# hmdb_id	synonym	added	rationale
+HMDB0006280	7α,25-dihydroxycholesterol	2026-09-28	Greek-letter form used in PMID 21796211 and the oxysterol literature; DB name is the ASCII '7-a,25-Dihydroxycholesterol'.
+HMDB0006280	7alpha,25-dihydroxycholesterol	2026-09-28	Spelled-out variant of the same name.
+HMDB0006280	7a,25-OHC	2026-09-28	Abbreviation used in PMID 21796211.
